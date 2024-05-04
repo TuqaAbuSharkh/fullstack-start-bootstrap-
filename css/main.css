@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 6000px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: teal;
+    position: sticky;
+    top:0;
+
+}
+.logo img{
+    width:50%;
+    display:flex;
+}
+.list ul{
+    display: flex;
+    list-style-type: none;
+    gap:15px;
+}
+ .list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
