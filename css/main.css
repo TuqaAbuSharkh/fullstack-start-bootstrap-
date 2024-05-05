@@ -6,12 +6,16 @@
 body{
     height: 6000px;
 }
+.container{
+    width:75%;
+    margin:auto;
+}
 .navbar{
+    height: 40px;
     display:flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
-    background-color: teal;
+    background-color: rgb(33, 37, 41);
     position: sticky;
     top:0;
 
@@ -29,4 +33,46 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+}
+a:hover{
+    color: rgba(238, 179, 42, 0.738);
+}
+
+.portfolio{
+    text-align: center;
+    background-color: rgb(248, 249, 250);
+}
+.portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+.portfolio-item{
+    width:33.33%;
+    padding: 5px;
+    background-color: #fff;
+    position: relative;
+}
+.portfolio-item img {
+    display:flex;
+    width: 100%;
+}
+
+.item-content{
+    background-color: rgba(234, 186, 13, 0.662);
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+.item-content:hover{
+    opacity: 1;
+    cursor: pointer;
 }
